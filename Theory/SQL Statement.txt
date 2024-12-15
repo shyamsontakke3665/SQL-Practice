@@ -1,0 +1,63 @@
+Statement of SQL:
+	DDL : data defination lang.
+	DML : data manipulations lang.
+	TCL : Transction / transtion control lang.
+	DCL : data control lang.
+	DQL : data query lang.
+	
+DDL : 
+	- DDL stands for data defination lang.
+	- it is statement which is used to create and construct an object or table inside the database 
+	  and deals with structure of the table.
+	-it has five statement
+		- create
+		- rename
+		- alter
+		- truncate
+		- drop
+		
+DML :
+	- DML stands for data manipulations lang.
+	- it is a statement which is used to manipulate the table by performing inseration, updatetion, deletion.
+	- it has three statement
+		- insert
+		- delete
+		- update
+		
+TCL : 
+    - TCL stands for Transction / transtion control lang.
+	- It is a Statement which is used to control the transtion perfrom on the database.
+	- transtion are nothing but DMl operations that is insert, delete, update.
+	- it has three statement
+		-commit
+		-savepoint
+		-rollback / rollbac to
+		
+DCL :
+    - DCL stands for data control lang.
+	- it is a statement which is used to control the flow of the data between the user.
+	- it has two statement
+		- grant
+		- revoke
+		
+DQL :
+	- DQL stands for data query lang.
+	- it is a statement which is used to retrive the data from the database.
+	- it has four statement.
+		-select
+		-projection
+		-selection
+		-join
+		
+	Select:
+		it is a statement which is used to retrive the data from the database and display it.
+		
+	projection:
+		- it is a statement which is used to retrive the data from the database by selecting only column.
+		- by default all the values present in the column will be selected.
+		
+	selection:
+		-it is a statement which is used to retrive the data by selecting both columns as well as records.
+		
+	join:
+		- it is a statement which is used to retrive the data by selecting multiple table simultaneously.

@@ -1,0 +1,28 @@
+Sub Query:-
+	Query inside another query is knows as sub query.
+	ther are two types of query
+		1. sub query(inner query)
+		2. main query(main query)
+		
+Functionlity of Subquery:-
+		Firstly inner query execute and generate the partial output.
+		this partial output input of outer query generate complate output.
+		
+Nested Subquery:-
+		Query inside multiple subquery without using logical operator.
+		
+All operator:
+		it is multivalue operator which takes single value LHS and multiple value RHS 
+		along with comparison operator.
+		
+Conditions Of subquery:-
+	cond -1 . Inner query select clause col_name should be same as outer query where clause col_name.
+	          where job=(select job from emp) ;    
+	
+	cond -2. Inner query select clause col_name, datatype should be same 
+			 as outer query where clause col_name, datatype
+			 where empnp=(select mgr from emp);
+			 
+	cond -3. Inner query select clause can't pass multiple col_name 
+			 to compare outer query where clause col_name
+			 where job= (select job from emp);
