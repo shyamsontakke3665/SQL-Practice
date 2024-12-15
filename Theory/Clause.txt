@@ -1,0 +1,64 @@
+From Clause:
+	-from caluse will start the exectuion we can pass table name as an argument in the from caluse.
+	-The job from clause is to go to database, serch fro the table and put the table under exectuion.
+	- Syntax:  from <table_name>;
+	
+Select Clause:
+	- select caluse will execute after the from clause.
+	- we can pass column name, or expresion or asterisk(*) as an argument in the select clause.
+	- the job of select clause is to go to table which is under exectuion, select the data and display it.
+	- select clause is responsible for resultant table or final output.
+	- Syntax: select */[distinct]/col_name/expresion/[alias].
+	
+	Semicolon(;):
+		- determines ends of the statement of terminute the statement.
+	
+	Comma(,):
+		- we can pass multiple column and expresion in the select clause by seprateing them using a seprater comma.
+
+	Asterisk(*):
+		- it is used to select all or everything.
+		- (*) is used to select all or everything but (*) must and should used as only argument in the select clause.
+		- if you want display all the details along with some extra column an expresion we haveto follow the syntax.
+		- syntax: select <table_name>.*, <col_name>/ exp[alias] from <table_name>;
+		
+	Expression:
+		- a statement with provides a result we called as an expresion.
+		- an expresion consists of two things operand, operator(+,-,*,/);
+		
+		operand are of two types:
+			1. column_name.
+			2. literals("direct value").
+			
+		literals are of three types
+			1. Number literals.
+			2. character literals.
+			3. Data literals.
+			
+		- From this we can state that an expresion is nothing but combincation of operand as well as operator.
+		
+		Note:
+			the character literals and date literals must and should inclosed within single qoute
+			name: 'shyam';
+			date: '21-feb-2002';
+			
+Alias:
+	- it is an alternative name given to column name and expresion that for resultant table.
+	- alias can provide by as single word alias,
+	- alias can provides by using or without using as keyword.
+	- alias can be provide as multiple word seprated by underscore(_).
+	- alias can be given as string but should be enclosed withing duble qoutes (" ").
+	- alias in not mandatory but always recommended to provide.
+	
+Distinct clause:
+	- it is used to remove the duplicated and reapated value from the resultant table.
+	- distinct clause should be used as first argument in select clause.
+	- we can pass col_name or expresion as an argument in the distinct clause.
+	- we can pass multiple column or expresion in the distinct clause whenever we are passing multiple 
+	  column_name and expresion in the distinct it always remove the combincation of duplicate from all the column.
+			
+		 
+	
+		
+
+	

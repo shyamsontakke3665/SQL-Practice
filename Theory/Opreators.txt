@@ -1,0 +1,88 @@
+Operators:
+	-operators is symbol, which is used to perfrom specific task.
+	- types of operators
+		1. Arithamatic Operator.(+,-,*,/)
+		2. Comparision operator.(==, !=)
+		3. Relational Operator.(<,>,>=, <=)
+		4. Logical Operator.(AND, OR , NOT)
+		5. Concatenaction Operator.(||)
+		6. Special Operator.(IN, NOT IN, LIKE, NOT LIKE, BETWEEN, NOT BETWEEN, IS, IS NOT)
+		7. Sub Query Operator(ALL, ANY, EXIST, NOT EXIST)
+		
+	
+	4. Logical operator:
+			1. AND
+			2. OR
+			3. NOT
+			
+		AND : - AND operator which is used to perfrom binary multiplication
+			  - AND operator return true if all the condtions get staticfy.
+		
+		OR : - OR operator which is used to perfrom binary addition.
+			 - OR operator return true if at least one condtions get staticfy.
+			 - we used OR operator in between to condtions.
+		
+		NOt:  
+		
+	5. Concatenaction Operator :
+			- it is used to join the given two string
+			- operator(||).
+			
+	6. Special Operator :
+		
+		1. IN operator:
+			- it is a multivalued operator which take mutiple value RHS.
+			- IN operator return true if atleast one value or condtion get staticefied.
+			syntax:
+					where col_name IN (val_1, val_2, ... val_n);
+			
+		2. NOT IN:
+			-it is just similar to IN Operator which take multiple value in  RHS but instend of selecting value
+			 it will reject the value.
+			 syntax:
+					where col_name NOT IN (val_1, val_2, ... val_n);
+			 
+		3.BETWEEN:
+			- comparing the particualr range value.
+			- whenever we have range we used between operator.
+			- between operator works including the rnge value.
+			- we can't interchange ragne value.
+			
+				
+		4. NOT BETWEEN:
+			- it is just similar to between operator but instend of selecting the range it will reject the range.
+			syntax:
+				where col_name  NOT BETWEEN  <starting value > And <ending value>;
+				
+		5. LIKE:
+			- it is used to mathc the pattern.
+			syntax: 
+				Where col_name like 'pattern_to_match';
+				
+			- we achive the pattern matching by using two special character.
+					percentile (%)
+					underscore (_)
+					
+				percentile (%):
+					it can accept any character, any no of time even no character.
+					
+				underscore (_):
+					it can accept any character but only once.
+					
+		6. NOT LIKE:
+			- it is just similar to like Operator but instend of considering the pattern it will reject the pattern.
+			syntax: 
+				Where col_name like 'pattern_to_match';
+				
+		7. IS Operator:
+			-It is special operator which is used to compare with null.
+			syntax  
+				where col_name IS null;
+		
+		8. IS NOT :
+			- it is just similar to IS operator but instend of considering the null it will reject Null.
+			syntax  
+				where col_name IS NOT null;
+			
+			
+	

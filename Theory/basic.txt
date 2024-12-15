@@ -1,0 +1,41 @@
+Data :-
+	Data a is rawfact which is describes the entity of an object.
+	
+DataBase:-
+	It is place or container used to store the data in systematic and organize manner which improve the 
+	performance on applicaton.
+	
+DataBase Operations:-
+	It is operations which perfrom activities like create, read, update and delete.
+	
+DBMS:
+	-DBMS stands for database management system.
+	-It is s/w which used to maintain and manage the database.
+	-to communicate with dbms used query lang.
+	-dbms provide security and anthentication.
+	
+Types of dbms:
+	-Object orriented.
+	-Network.
+	-RDBMS
+	-Hierarchical
+	
+RDBMS:
+	-RDBMS stands for Relational database management system.
+	-It is s/w which used to maintain and manage the database where the store in the format of table
+	-to communicate with RDBMS used sql lang.
+	-RDBMS is designed by  "E.F.Codd" in 1970.
+	
+Relational Model:
+	this model is given by "E.F.Codd" in this moded data can be store in the format of table,
+	in this model table can be store in the fromat of metadata.
+	
+Metadata:
+	data of data is called metadata.
+	
+E.F.Codd Rule:
+	-Data enter into the cell should be single value or automic data.
+	-we can store the data in multiple table and also establish connection uisng key attribute.
+	-to validate the data enter into the cell use datatype and constraints.
+	-datatypes is mandatory and constraints is optional.
+

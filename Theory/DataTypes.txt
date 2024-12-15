@@ -1,0 +1,105 @@
+Datatypes:
+	Datatype is a type of data or kind of data used to store in memmory.
+	
+	Types of datatype:
+		char();
+		varchar();
+		varchar2();
+		character large object clob;
+		binary large object blob;
+		date
+		number
+		timestamp;
+		
+char:
+	-the char datatype is fixed length memmory allocation
+	-in char datatype unused memmory box is wested.
+	-the maximum length is 2000 memmory block.
+	-whenever you want to store fixed length value than used char datatype.
+	-ex. mono,addhar_card_no, pan_no, studid.
+	
+varchar:
+	-the varchar datatype is variable length memmory allocation.
+	-in varchar datatype unused memmory box is recyled.
+	-it is slower as compare char datatype.
+	-the maximum length is 2000 memmory block.
+	
+varhcar2();
+	-VARCHAR2 is the same as VARCHAR in the oracle database. 
+	-The main difference is that VARCHAR is ANSI Standard and VARCHAR2 is Oracle standard.
+	-The VarChar2 data type is used to store the character values. 
+	-It is a variable-length data type i.e. we can change the size of the character variable at execution time. 
+	 Hence, it is also called a Dynamic datatype.
+	-It is used to store normal characters and alphanumeric characters too. 
+	-The VARCHAR2 data type can store a character string of a maximum length of 4000 bytes of characters.
+	
+CLOB:
+	-CLOB, or Character Large Object, is a data type that stores large amounts 
+	of character data in a database management system:
+	-The size of clob is 4 GB.
+	-syntax : CLOB;
+	
+BLOB:
+	A BLOB (Binary Large Object) data type stores binary data in a database. 
+	BLOBs can store a variety of data types, including:
+	Images, Videos, Audio files, Documents, Archives, Executable files, and Backups. 
+	BLOBs are used to store files that are too large to fit in regular fields.
+	The size of blob is 4 GB.
+	For example, you can use a BLOB column to store a user's profile picture
+	
+Date:
+	It is a datatype used to store day,month,and year.
+	syntax: date;
+	format: "dd-mon-yyyy";
+			"dd-mon-yy";
+			
+Number(p,s):
+	-It is a datatped used to store integer value and float values
+	-number(p). it will store integer value only.
+	-number(p,s) it will store float value only.
+	
+timestamp:
+	it will store date & time information including miliscond.
+	format :"dd-mon-yy hh:mm:ss:ms";
+	
+Constraints:
+	it is a set of condition used to validate the data entered into the cell.
+		-unique
+		-not null
+		-check
+		-primary key
+		-foreign key
+		-default
+		
+unique:
+	-it is a constraint used to avoid dupilicate data entered into the cell.
+	
+Not null:
+	-it is a constraint used to represent something in a cell.
+	-null : null is keyword which represent nothing in a cell.
+	
+check:
+	it is a constraint used to add extra condition.
+	for example:
+		check (length(ename)=10);
+		check (age>=18 and age <=60);
+		check (length(pinNo)=6)
+		
+Primary key:
+	- It is a key used to uniquely identified row in table.
+	- it should be unique.
+	- it should be not null.
+	- it is combination of unique and not null.
+	- in table should be only one primary key.
+	- primary key represent table.
+	- primary key is not mandatory.
+	
+foreign key:
+	- it is a key used to make connection one table to another table.
+	- it can be unique.
+	- it can be not null.
+	- it is not combination of unique and not null.
+	- primary key of one table, should be foreign key of another table.
+	- foreign key we can have multiple in a table.
+	- it is also knows as refrence integrarity constraint.
+	- it is presents in child table.
