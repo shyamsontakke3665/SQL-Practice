@@ -1,0 +1,42 @@
+=======================Functions:=======================
+
+Function:
+	function is noting but set of instrucion of list of instrucion to perform a specific task.
+
+	ther are two types:
+		1. inbuilt /pre-defined function.
+		2. user definbed function.
+
+	ther are two types of inbuilt function.
+		1. Single row Function.
+		2. Multi row Function / aggregate / Group .
+
+1. Single Row Function.
+	- single row function execute row-by-row.
+	- it takes one input execute it an generate an output than it will go next input.
+	- if we pass n no.of input to single row function it will return n no.of output.
+	
+2. Multi Row Function.
+	- multirow function can also called as aggregate Function or group function.
+	- it takes all input at once and aggregate it combines and generate one single output.
+	- if we pass n no.of input to multirow function it will return only one single output.
+	
+	types of multirow function:
+	
+		1. max()
+		2. min()
+		3. sum()
+		4. avg()
+		5. count()
+		
+1. max():
+	it is used to find the maximum value from the pass the arguments.
+2. min():
+	it is used to find the minimum value from the pass the arguments.
+3. sum():
+	it is used  find the toatal of summation of the value from the pass the arguments.
+4. avg():
+	it is used to find the Average value from the pass the arguments.
+5. count():
+	it is used to find the no.of  value from the pass the arguments.
+		

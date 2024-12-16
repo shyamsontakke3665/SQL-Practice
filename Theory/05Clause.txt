@@ -56,15 +56,6 @@ Distinct clause:
 	- we can pass col_name or expresion as an argument in the distinct clause.
 	- we can pass multiple column or expresion in the distinct clause whenever we are passing multiple 
 	  column_name and expresion in the distinct it always remove the combincation of duplicate from all the column.
-
-Whrere Clause:
-	- it is used to filter the record.
-	- it execute row-by-row.
-	- we can pass multiple filter condition in where clause using logical operator.
-	-Syntax:
-		Select * / [distinc] col_name, expersion [alias] 
-		from <table name>
-		where <filter cond>;
 			
 		 
 	
