@@ -56,6 +56,66 @@ Distinct clause:
 	- we can pass col_name or expresion as an argument in the distinct clause.
 	- we can pass multiple column or expresion in the distinct clause whenever we are passing multiple 
 	  column_name and expresion in the distinct it always remove the combincation of duplicate from all the column.
+
+Where clause:
+	- it is used to filter the records.
+	- it execute row-by-row 
+	- we can pass filter conditions in where clause.
+	- we can pass multiple filter conditions in where clause using logical operator.
+	- we can not pass alias name given in the select clause to where clause because its order of exectuion.
+	syntax:
+		select */[distinct]/col_name/expresion/[alias].
+		from <table_name>
+		where <filter cond>;
+		
+Group By Clause:
+	- it is used to group the records.
+	- it is execute row-by-row.
+	- we can pass col_name and expresion as an argument in the group by clause to make the group.
+	- we can pass group by expresion along with aggregate function or multirow function in the select clause.
+	syntax:
+		select */[distinct]/col_name/expresion/[alias].
+		from <table_name>
+		[where <filter cond>]
+		group by <col_name / expresion>;
+		 
+	
+	Group by Expression:
+		- a column_name AND Expression used in the group by clause used to create group is called as group by expresion.
+		- whatever execute after group by clause it will exectue group by group.
+		- we can pass multiple column_name and expresion as an argument using seprateing by comm, 
+		- if we used multiple column_name and expresion create group based on combincation of column or expresion.
+		
+Having Clause:
+	- it is used to filter the group.
+	- it exectue group-by-group.
+	- we can pass group-fliter-cond as an argument in having clause.
+	- having clause should be used  after the group by clause.
+	- we can pass multirow function in having clause.
+	- we can pass multiple group-fliter-cond in having clause using logical operator.
+	Syntax:
+		select <group function> / group by expresion
+		from <table_name>
+		[where <filter cond>]
+		group by <col_name / expresion>
+		having <group-fliter-cond>;
+		
+Order by Clause:
+	- it is used to sort the data either in ascending order or descending oreder.
+	- order caluse should be written in last clause in any sql statement or query.
+	- it will exectue at the last that is after the select clause.
+	- we can pass column_name or expresion as an argument along with  keyword[asc/ desc] in the order by clause.
+	- by defult oreder by clause will sort the data in ascending order.
+	- we can pass alias name given in the slect to the oreder by clause because of its order of exectuion.
+	- Syntax:
+		select */[distinct]/col_name/expresion/[alias].
+		from <table_name>
+		[where <filter cond>]
+		[group by <col_name / expresion>]
+		[having <group-fliter-cond>]
+		order by <column_name> [asc/ desc];
+	
+	
 			
 		 
 	
