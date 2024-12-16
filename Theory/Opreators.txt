@@ -55,7 +55,7 @@ Operators:
 				where col_name  NOT BETWEEN  <starting value > And <ending value>;
 				
 		5. LIKE:
-			- it is used to mathc the pattern.
+			- it is used to match the pattern.
 			syntax: 
 				Where col_name like 'pattern_to_match';
 				
