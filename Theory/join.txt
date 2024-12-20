@@ -1,0 +1,108 @@
+Joins:-
+	retrive data from multiple table simultaneously.
+	types of join:
+		1.Cross Joins.
+		2.Inner join.
+		3.Natrual join.
+		4.Outer join.
+			1.left outer join.
+			2.right outer join.
+			3.full outer join.
+		5.Self join.
+		
+1. Cross Joins:-
+		it is join used to get combination of one table with another table.
+		 -matched record.
+		 -unmatched record.
+		 -error record.
+		
+		syntax anssi:
+			select col_1, col_2, ... col_n
+			from <table1> cross join <table2>;
+			
+		oracle :
+			select col_1, col_2, ... col_n
+			from <table1>,<table2>;
+			
+What is the error record?
+		-the null value compare if any vlaue the result should be null but cross join get some output that is knows as eorror record.
+		-even their no connection between two table cross join diliver some output that is knows as error record.
+		
+2. Inner join:
+		- it is join used to get only the matched record.
+		- inner join is alos knows as equi-join.
+		
+		syntax anssi:
+			select col_1, col_2, ... col_n
+			from <table1> inner join <table2>
+			on<table1.key_attribute>=<table2.key_attribute>
+			
+		oracle :
+			select col_1, col_2, ... col_n
+			from <table1>,<table2>
+			where <table1.key_attribute>=<table2.key_attribute> and <condition>.
+			
+3. Natrual join:
+		whenever we don't know the table structure we can use natrual join.
+		- it is types of inner join.
+
+		case1. when natrually these is connection between two table natural join gives output of inner join(matched records).
+		case2. when natrually these is no connection between two table the natrual join gives o/p of error record.
+		
+		syntax anssi:
+			select col_1, col_2, ... col_n
+			from <table1> natrual join <table2>;
+			
+		- it has no oracle syntax because it is same as cross join.
+		
+4. outer join:
+		- it is join used to get both match and unmatch records.
+		
+	1. left outer join:-
+		- it is join used to get both match and unmatch rocords in left side table.
+		syntax anssi:
+			select col_1, col_2, ... col_n
+			from <table1> left outer join <table2>
+			on<table1.key_attribute>=<table2.key_attribute>
+			
+		oracle :
+			select col_1, col_2, ... col_n
+			from <table1>,<table2>
+			where <table1.key_attribute>=<table2.key_attribute>(+); 
+			
+	2. Right outer join:-
+		- it is join used to get both match and unmatch rocords in right side table.
+		syntax anssi:
+			select col_1, col_2, ... col_n
+			from <table1> right outer join <table2>
+			on<table1.key_attribute>=<table2.key_attribute>
+			
+		oracle :
+			select col_1, col_2, ... col_n
+			from <table1>,<table2>
+			where <table1.key_attribute>=<table2.key_attribute>(+); 
+			
+	3. Full outer join:-
+		- it is join used to get both table match  and unmatch records.
+		
+		syntax anssi:
+			select col_1, col_2, ... col_n
+			from <table1> full outer join <table2>
+			on<table1.key_attribute>=<table2.key_attribute>	 
+		
+		-there no oracle syntax for full outer join because is same as inner join.
+		
+Self join:-
+		- it is join, retrival data with in same table but output is present in differnt rows.
+		
+		syntax. 
+			select col_1, col_2, ... col_n
+			from <table1> <alias name>  join <table2> <alias name>
+			on <alias name>.col_name= <alias name>.<col_name>;
+			
+		orace:
+			select col_1, col_2, ... col_n
+			from <table1> <alias name>, <table2> <alias name>
+			where <alias name>.col_name=<alias name>.<col_name>;
+
+			
